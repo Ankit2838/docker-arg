@@ -7,7 +7,7 @@ ARG ENV
 
 COPY . .
 
-# Copy correct .env file based on ENV.
+# Copy correct .env file based on ENV
 COPY .env.$ENV .env
 
 RUN chmod +x app.sh
