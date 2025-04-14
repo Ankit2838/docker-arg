@@ -10,6 +10,6 @@ COPY . .
 # Copy correct .env file based on ENV
 COPY .env.$ENV .env
 
-RUN chmod +x app.sh
+RUN chmod +x script.sh
 
-CMD ["./app.sh"]
+CMD ["./script.sh"]
